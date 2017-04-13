@@ -1,7 +1,7 @@
 # Projeto Eleições Municipais
 *Projeto com exemplo das Eleições Municipais com os Módulos: TRE e Urna Eletrônica*
-+ Módulo TRE: Destinada para os cadastrados em geral como município, eleitores, candidatos e etc, além de verificar a apuração das votações
-+ Módulo Urna Eletrônica: Destinada para a eleição e justificativado voto
++ Módulo TRE: Destinada para os cadastros em geral como município, eleitores, candidatos e etc, além de verificar a apuração das votações
++ Módulo Urna Eletrônica: Destinada para a eleição e justificativa do voto
 
 ## Tecnologias Utilizadas: 
 + C# 
