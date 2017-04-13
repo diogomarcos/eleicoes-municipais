@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEBCDB7A-630E-4971-8FA5-FD268479CDB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuloTRE</RootNamespace>
+    <AssemblyName>ModuloTRE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadastre\FrmCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmCandidato.Designer.cs">
+      <DependentUpon>FrmCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre\FrmEleitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmEleitor.Designer.cs">
+      <DependentUpon>FrmEleitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre\FrmExportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmExportar.Designer.cs">
+      <DependentUpon>FrmExportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre\FrmImportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmImportar.Designer.cs">
+      <DependentUpon>FrmImportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre\FrmMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmMunicipio.Designer.cs">
+      <DependentUpon>FrmMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre\FrmPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmPartido.Designer.cs">
+      <DependentUpon>FrmPartido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre\FrmUrnaEletronica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastre\FrmUrnaEletronica.Designer.cs">
+      <DependentUpon>FrmUrnaEletronica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controller\Acao.cs" />
+    <Compile Include="controller\DadosCandidato.cs" />
+    <Compile Include="controller\DadosEleitor.cs" />
+    <Compile Include="controller\DadosExportar.cs" />
+    <Compile Include="controller\DadosJustificativa.cs" />
+    <Compile Include="controller\DadosMunicipio.cs" />
+    <Compile Include="controller\DadosPartido.cs" />
+    <Compile Include="controller\DadosPrefeito.cs" />
+    <Compile Include="controller\DadosUrnaEletronica.cs" />
+    <Compile Include="controller\DadosVereador.cs" />
+    <Compile Include="controller\PathFile.cs" />
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\BrancosNulos.cs" />
+    <Compile Include="model\Candidato.cs" />
+    <Compile Include="model\Eleitor.cs" />
+    <Compile Include="model\Justificativa.cs" />
+    <Compile Include="model\Municipio.cs" />
+    <Compile Include="model\Partido.cs" />
+    <Compile Include="model\Pessoa.cs" />
+    <Compile Include="model\UrnaEletronica.cs" />
+    <Compile Include="model\Votacao.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmApPrefeito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmApPrefeito.Designer.cs">
+      <DependentUpon>FrmApPrefeito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmApVereador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmApVereador.Designer.cs">
+      <DependentUpon>FrmApVereador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmCandidatos.Designer.cs">
+      <DependentUpon>FrmCandidatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmEleitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmEleitores.Designer.cs">
+      <DependentUpon>FrmEleitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmJustificativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmJustificativa.Designer.cs">
+      <DependentUpon>FrmJustificativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmLoad.Designer.cs">
+      <DependentUpon>FrmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmMunicipios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmMunicipios.Designer.cs">
+      <DependentUpon>FrmMunicipios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmPartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmPartidos.Designer.cs">
+      <DependentUpon>FrmPartidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmUrnasEletronicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmUrnasEletronicas.Designer.cs">
+      <DependentUpon>FrmUrnasEletronicas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cadastre\FrmCandidato.resx">
+      <DependentUpon>FrmCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastre\FrmEleitor.resx">
+      <DependentUpon>FrmEleitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastre\FrmExportar.resx">
+      <DependentUpon>FrmExportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastre\FrmImportar.resx">
+      <DependentUpon>FrmImportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastre\FrmMunicipio.resx">
+      <DependentUpon>FrmMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastre\FrmPartido.resx">
+      <DependentUpon>FrmPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastre\FrmUrnaEletronica.resx">
+      <DependentUpon>FrmUrnaEletronica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="view\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmApPrefeito.resx">
+      <DependentUpon>FrmApPrefeito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmApVereador.resx">
+      <DependentUpon>FrmApVereador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmCandidatos.resx">
+      <DependentUpon>FrmCandidatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmEleitores.resx">
+      <DependentUpon>FrmEleitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmJustificativa.resx">
+      <DependentUpon>FrmJustificativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmLoad.resx">
+      <DependentUpon>FrmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmMunicipios.resx">
+      <DependentUpon>FrmMunicipios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmPartidos.resx">
+      <DependentUpon>FrmPartidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmUrnasEletronicas.resx">
+      <DependentUpon>FrmUrnasEletronicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

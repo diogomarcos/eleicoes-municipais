@@ -1,0 +1,18 @@
+Prefeito 1;14;Belo Horizonte;PTB;P
+Prefeito 2;40;Belo Horizonte;PSB;P
+Prefeito 3;43;Belo Horizonte;PV;P
+Vereador 1;14333;Belo Horizonte;PTB;V
+Vereador 2;14555;Belo Horizonte;PTB;V
+Vereador 3;40555;Belo Horizonte;PSB;V
+Vereador 4;40777;Belo Horizonte;PSB;V
+Vereador 5;43888;Belo Horizonte;PV;V
+Vereador 6;43999;Belo Horizonte;PV;V
+Prefeito 10;14;Contagem;PTB;P
+Prefeito 11;40;Contagem;PSB;P
+Prefeito 12;43;Contagem;PV;P
+Vereador 10;14656;Contagem;PTB;V
+Vereador 11;14879;Contagem;PTB;V
+Vereador 12;40565;Contagem;PSB;V
+Vereador 13;40965;Contagem;PSB;V
+Vereador 14;43676;Contagem;PV;V
+Vereador 14;43787;Contagem;PV;V

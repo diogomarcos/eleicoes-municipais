@@ -1,0 +1,2 @@
+Belo Horizonte;MG;100;4
+Contagem;MG;100;4

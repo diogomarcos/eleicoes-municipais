@@ -1,0 +1,9 @@
+Prefeito 1;14;PTB;P;2
+Prefeito 2;40;PSB;P;1
+Prefeito 3;43;PV;P;1
+Vereador 1;14333;PTB;V;0
+Vereador 2;14555;PTB;V;2
+Vereador 3;40555;PSB;V;2
+Vereador 4;40777;PSB;V;0
+Vereador 5;43888;PV;V;0
+Vereador 6;43999;PV;V;0

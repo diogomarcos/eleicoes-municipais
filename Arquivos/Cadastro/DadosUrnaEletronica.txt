@@ -1,0 +1,4 @@
+Belo Horizonte;1111;111
+Belo Horizonte;2222;222
+Contagem;3333;333
+Contagem;4444;444
